@@ -1,4 +1,8 @@
 .logosmall {
-    width: 100px;
-    height: 100px;
+    width: 5%;
+    height: 5%;
+}
+
+.dark {
+    background-color :black;
 }
