@@ -1,3 +1,12 @@
+.font-400 {
+    font-family: "openSans", sans-serif;
+    font-weight: 400;
+}
+
+.font-700 {
+    font-weight: 700;
+}
+
 .logosmall {
     width: 5%;
     height: 5%;

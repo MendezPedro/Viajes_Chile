@@ -9,6 +9,9 @@
     <!--codigo minificado. No tiene espacios para ocupar mas espacio-->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
 
+    <!-- googlefonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300;700&display=swap" rel="stylesheet">
 
     <!--Font awesome-->
     <script src="https://kit.fontawesome.com/eaa2b21845.js" crossorigin="anonymous"></script>
@@ -70,22 +73,22 @@
     </header>
 
     <!-- Acerca de mi -->
-    <section id="about" class="text-center dark pt-3 pb-5">
+    <section id="about" class="text-center dark pt-3 pb-5 d-none  d-md-block">
         <div class="container ">
-            <h2 class="font-weight-bold  text-white">¿Quienes Somos?</h2>
+            <h2 class="font-700  text-white">¿Quienes Somos?</h2>
             <hr class="bg-info">
             <div class="row text-white my-5">
                 <div class="col-md-4">
-                    <i class="container bg-info fas fa-plane fa-2x "></i>
-                    <p class="text-left">Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde reprehenderit dolores magni? Repudiandae, magni. Iste illum minima eveniet architecto non repudiandae voluptates odit. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio omnis, autem nostrum suscipit maiores tempore ad illo a veritatis esse ut voluptatem culpa aliquam odit vel sequi dolores, consequatur eos!</p> 
+                    <i class="container bg-info fas fa-plane fa-2x " data-container="body" data-toggle="popover" data-trigger="hover" data-placement="bottom" data-content="Avión"></i>
+                    <p class="text-left font-400 ">Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde reprehenderit dolores magni? Repudiandae, magni. Iste illum minima eveniet architecto non repudiandae voluptates odit. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio omnis, autem nostrum suscipit maiores tempore ad illo a veritatis esse ut voluptatem culpa aliquam odit vel sequi dolores, consequatur eos!</p> 
                 </div>
                 <div class="col-md-4">
-                    <p class="text-left">Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde reprehenderit dolores magni? Repudiandae, magni. Iste illum minima eveniet architecto non repudiandae voluptates odit. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fuga praesentium architecto deleniti possimus vel ducimus dolorem magni aperiam enim odio perspiciatis error repellat consectetur minus atque esse obcaecati, voluptates veritatis.</p>
-                    <i class=" container fas fa-mountain fa-2x bg-info"></i>
+                    <p class="text-left font-400">Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde reprehenderit dolores magni? Repudiandae, magni. Iste illum minima eveniet architecto non repudiandae voluptates odit. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fuga praesentium architecto deleniti possimus vel ducimus dolorem magni aperiam enim odio perspiciatis error repellat consectetur minus atque esse obcaecati, voluptates veritatis.</p>
+                    <i class=" container fas fa-mountain fa-2x bg-info" data-container="body" data-toggle="popover" data-trigger="hover" data-placement="bottom" data-content="Montaña"></i>
                 </div>
                 <div class="col-md-4">
-                    <i class="container fas fa-route fa-2x bg-info"></i>
-                    <p class="text-left">Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde reprehenderit dolores magni? Repudiandae, magni. Iste illum minima eveniet architecto non repudiandae voluptates odit. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Magni consequuntur veritatis minima perferendis aliquam, distinctio qui fuga quam sunt sequi fugit minus molestiae reprehenderit similique odit iusto aliquid pariatur sit? </p>
+                    <i class="container fas fa-route fa-2x bg-info" data-container="body" data-toggle="popover" data-trigger="hover" data-placement="bottom" data-content="Ruta"></i>
+                    <p class="text-left font-400">Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde reprehenderit dolores magni? Repudiandae, magni. Iste illum minima eveniet architecto non repudiandae voluptates odit. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Magni consequuntur veritatis minima perferendis aliquam, distinctio qui fuga quam sunt sequi fugit minus molestiae reprehenderit similique odit iusto aliquid pariatur sit? </p>
                 </div>
                     
             </div>
@@ -93,9 +96,9 @@
     </section>
 
     <!-- Destacados en tarjetas -->
-    <section id="destacado" class="dark">
+    <section id="destacado" class="dark px-1">
         <div class="container py-5">
-            <h2 class="font-weight-bold  text-white text-center">Destacados</h2>
+            <h2 class="font-700  text-white text-center">Destacados</h2>
             <hr class="bg-info">
             <div class="row card-deck">
                 <div class="card">
@@ -134,13 +137,11 @@
 
     <!-- contacto typer -->
     <div id="contacto" class="dark py-3">
-        <h2 class="font-weight-bold  text-white text-center mt-5">Contacto</h2>
+        <h2 class="font-700 text-white text-center mt-5">Contacto</h2>
         <hr class=" container bg-info">
-        <div class="container bg-white text-center py-5">
-            <h2 class="mt-5">Hola, gracias por contactarnos</h2>
-            <button type="button" class="btn btn-primary my-5">Comenzar</button>
-            <span class="small"> pulsa</span>
-            <span class="font-weight-bold small">Enter</span>
+        <!-- Codigo typeform -->
+        <div class="typeform-widget container" data-url="https://form.typeform.com/to/Csi1M8sB?typeform-medium=embed-snippet" style="width: 100%; height: 500px;"></div>
+        <script> (function() { var qs,js,q,s,d=document, gi=d.getElementById, ce=d.createElement, gt=d.getElementsByTagName, id="typef_orm", b="https://embed.typeform.com/"; if(!gi.call(d,id)) { js=ce.call(d,"script"); js.id=id; js.src=b+"embed.js"; q=gt.call(d,"script")[0]; q.parentNode.insertBefore(js,q) } })() </script>
         </div>
     </div>
 
@@ -148,18 +149,15 @@
     <footer class="bg-info" >
         <div class="container py-3 text-white">
             <div class="row">
-                <h1 class="col-6 ">Viajes Chile</h1> 
-                <div class="col-6 ">
-                        <a href="#https://www.github.com/"><i class="fab fa-github-square fa-3x text-white px-3"></i></a>
-                        <a href="#"><i class="fab fa-linkedin fa-3x text-white px-3"></i></a>
-                        <a href="#"><i class="fab fa-twitter-square fa-3x text-white px-3"></i></a>
-                        <a href="#"><i class="fab fa-facebook-square fa-3x text-white px-3"></i></a>
+                <h1 class="col-md-6 col-4">Viajes Chile</h1> 
+                <div class="col-md-6 col-8">
+                        <a href="https://www.github.com/" target="_blank"><i class="fab fa-github-square fa-3x text-white px-3"></i></a>
+                        <a href="https://www.linkedin.com" target="_blank"><i class="fab fa-linkedin fa-3x text-white px-3"></i></a>
+                        <a href="https://www.twitter.com" target="_blank"><i class="fab fa-twitter-square fa-3x text-white px-3"></i></a>
+                        <a href="https://www.facebook.com" target="_blank"><i class="fab fa-facebook-square fa-3x text-white px-3"></i></a>
                 </div>
             </div>
         </div>
-    </div>
-
-
     </footer>
 
     <!-- scrips de javaScrip. se ocupan al final del body para que la pagina cargue mas rapido-->
